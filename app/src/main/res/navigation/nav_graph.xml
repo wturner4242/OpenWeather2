@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/citySelectFragment">
+
+    <fragment
+        android:id="@+id/citySelectFragment"
+        android:name="com.williamturner.openweather.CitySelectFragment"
+        android:label="CitySelectFragment" >
+        <action
+            android:id="@+id/action_citySelectFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.williamturner.openweather.ForecastFragment"
+        android:label="ForecastFragment" >
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+</navigation>

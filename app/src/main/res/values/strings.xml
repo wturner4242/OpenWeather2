@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="city_edit_text">Enter a City</string>
+    <string name="city_look_up_button">Look Up</string>
+    <string name="units_fahrenheit">imperial</string>
+
+
+</resources>
